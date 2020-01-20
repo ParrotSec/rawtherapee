@@ -1,0 +1,254 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: rawtherapee
+Upstream-Contact: Gabor Horvath <hgabor@rawtherapee.com>
+Source: https://github.com/Beep6581/RawTherapee
+
+Files: *
+Copyright: 2004-2011, Gabor Horvath <hgabor@rawtherapee.com>
+License: GPL-3+
+
+Files: rtengine/klt/*
+Copyright: not applicable
+License: public-domain
+ This code is now in the public domain. The Stanford Office of
+ Technology Licensing has removed all licensing restrictions.
+
+Files: rtengine/amaze_demosaic_RT.cc rtengine/CA_correct_RT.cc
+       rtengine/cfa_linedn_RT.cc rtengine/fast_demo.cc
+       rtengine/green_equil_RT.cc
+       rtengine/hilite_recon.cc rtengine/PF_correct_RT.cc
+       rtgui/dirpyrequalizer.cc rtgui/dirpyrequalizer.h
+       rtengine/FTblockDN.cc rtengine/boxblur.h
+       rtengine/dirpyr_equalizer.cc
+Copyright: 2008-2012, Emil Martinec <ejmartin@uchicago.edu>
+License: GPL-3+
+
+Files: rtengine/array2D.h rtengine/LUT.h
+Copyright: 2011, Jan Rinze Peterzon <janrinze@gmail.com>
+License: GPL-3+
+
+Files: rtengine/cfa_linedn_RT.cc
+Copyright: 1997, Takuya OOURA <ooura@mmm.t.u-tokyo.ac.jp>
+           2008-2010, Emil Martinec <ejmartin@uchicago.edu>
+License: GPL-3+
+
+Files: rtengine/dcp.cc rtengine/dcp.h rtengine/lcp.cc rtengine/lcp.h
+       rtgui/extprog.cc rtgui/extprog.h rtgui/soundman.cc rtgui/soundman.h
+Copyright: 2010-2012, Oliver Duis <www.oliverduis.de>
+License: GPL-3+
+
+Files: rtengine/dcraw.c
+Copyright: 1997-2014, Dave Coffin <dcoffin@cybercom.net>
+License: GPL-2+
+
+Files: rtengine/dcraw.h
+Copyright: 2010, Fabio Suprani <ffsup2@yahoo.it>
+License: GPL-3+
+
+Files: rtengine/dcraw.cc
+Copyright: 1997-2014, Dave Coffin <dcoffin@cybercom.net>
+License: GPL-3+
+
+Files: rtengine/imageio.cc rtexif/stdattribs.cc
+       rtgui/editorpanel.cc rtgui/editorpanel.h
+Copyright: 2004-2010, Gabor Horvath <hgabor@rawtherapee.com>
+           2010, Oliver Duis <www.oliverduis.de>
+License: GPL-3+
+
+Files: rtengine/ipvibrance.cc
+Copyright: 2004-2010, Gabor Horvath <hgabor@rawtherapee.com>
+           2011, Jacques Desmis <jdesmis@gmail.com>
+License: GPL-3+
+
+Files: rtengine/jdatasrc.cc
+Copyright: 1994-1996, Thomas G. Lane
+License: libjpeg
+  In plain English:
+  .
+  1. We don't promise that this software works.  (But if you find any bugs,
+     please let us know!)
+  2. You can use this software for whatever you want.  You don't have to pay us.
+  3. You may not pretend that you wrote this software.  If you use it in a
+     program, you must acknowledge somewhere in your documentation that
+     you've used the IJG code.
+  .
+  In legalese:
+  .
+  The authors make NO WARRANTY or representation, either express or implied,
+  with respect to this software, its quality, accuracy, merchantability, or
+  fitness for a particular purpose.  This software is provided "AS IS", and you,
+  its user, assume the entire risk as to its quality and accuracy.
+  .
+  This software is copyright (C) 1991-1998, Thomas G. Lane.
+  All Rights Reserved except as specified below.
+  .
+  Permission is hereby granted to use, copy, modify, and distribute this
+  software (or portions thereof) for any purpose, without fee, subject to these
+  conditions:
+  (1) If any part of the source code for this software is distributed, then this
+  README file must be included, with this copyright and no-warranty notice
+  unaltered; and any additions, deletions, or changes to the original files
+  must be clearly indicated in accompanying documentation.
+  (2) If only executable code is distributed, then the accompanying
+  documentation must state that "this software is based in part on the work of
+  the Independent JPEG Group".
+  (3) Permission for use of this software is granted only if the user accepts
+  full responsibility for any undesirable consequences; the authors accept
+  NO LIABILITY for damages of any kind.
+  .
+  These conditions apply to any software derived from or based on the IJG code,
+  not just to the unmodified library.  If you use our work, you ought to
+  acknowledge us.
+  .
+  Permission is NOT granted for the use of any IJG author's name or company name
+  in advertising or publicity relating to this software or products derived from
+  it.  This software may be referred to only as "the Independent JPEG Group's
+  software".
+  .
+  We specifically permit and encourage the use of this software as the basis of
+  commercial products, provided that all warranty or liability claims are
+  assumed by the product vendor.
+  .
+  It appears that the arithmetic coding option of the JPEG spec is covered by
+  patents owned by IBM, AT&T, and Mitsubishi.  Hence arithmetic coding cannot
+  legally be used without obtaining one or more licenses.  For this reason,
+  support for arithmetic coding has been removed from the free JPEG software.
+  (Since arithmetic coding provides only a marginal gain over the unpatented
+  Huffman mode, it is unlikely that very many implementations will support it.)
+  So far as we are aware, there are no patent restrictions on the remaining
+  code.
+  .
+  The IJG distribution formerly included code to read and write GIF files.
+  To avoid entanglement with the Unisys LZW patent, GIF reading support has
+  been removed altogether, and the GIF writer has been simplified to produce
+  "uncompressed GIFs".  This technique does not use the LZW algorithm; the
+  resulting GIF files are larger than usual, but are readable by all standard
+  GIF decoders.
+  .
+  We are required to state that
+      "The Graphics Interchange Format(c) is the Copyright property of
+      CompuServe Incorporated.  GIF(sm) is a Service Mark property of
+      CompuServe Incorporated."
+
+Files: rtgui/config.h.in
+Copyright: 2010, Lukas Jirkovsky <l.jirkovsky@gmail.com>
+License: GPL-3+
+
+Files: rtgui/dirpyrequalizer.cc rtgui/dirpyrequalizer.h
+Copyright: 2010, Emil Martinec <ejmartin@uchicago.edu>
+License: GPL-3+
+
+Files: rtgui/hsvequalizer.cc rtgui/hsvequalizer.h
+Copyright: 2010, Ilya Popov <ilia_popov@rambler.ru>
+License: GPL-3+
+
+Files: rtgui/exportpanel.cc rtgui/exportpanel.h
+Copyright: 2004-2012, Gabor Horvath <hgabor@rawtherapee.com>
+           2012, Michael Ezra <michael@michaelezra.com>
+           2010, Oliver Duis <www.oliverduis.de>
+License: GPL-3+
+
+Files: rtgui/filebrowser.cc
+Copyright: 2004-2010, Gabor Horvath <hgabor@rawtherapee.com>
+           2011, Michael Ezra <www.michaelezra.com>
+           2011, Oliver Duis <www.oliverduis.de>
+License: GPL-3+
+
+Files: rtgui/filecatalog.cc
+Copyright: 2004-2010, Gabor Horvath <hgabor@rawtherapee.com>
+           2011, Michael Ezra <www.michaelezra.com>
+License: GPL-3+
+
+Files: rtgui/preferences.cc rtgui/rtwindow.cc
+Copyright: 2004-2010, Gabor Horvath <hgabor@rawtherapee.com>
+           2004-2010, Oliver Duis <www.oliverduis.de>
+License: GPL-3+
+
+Files: rtgui/rtimage.cc
+Copyright: 2004-2010, Gabor Horvath <hgabor@rawtherapee.com>
+           2011, Jean-Christophe FRISCH <natureh@free.fr>
+License: GPL-3+
+
+Files: rtgui/lensprofile.cc rtgui/lensprofile.h
+Copyright: 2012, Oliver Duis <oduis@oliverduis.de>
+License: GPL-3+
+
+Files: rtengine/alignedbuffer.h
+Copyright: 2004-2012, Gabor Horvath <hgabor@rawtherapee.com>
+           2012, Oliver Duis <oduis@oliverduis.de>
+License: GPL-3+
+
+Files: rtengine/opthelper.h
+Copyright: 2013, Ingo Weyrich
+License: GPL-3+
+
+Files: rtengine/cJSON.c rtengine/cJSON.h
+Copyright: 2009, Dave Gamble
+License: Expat
+
+Files: debian/*
+Copyright: 2010-2013, Philip Rinn <rinni@gmx.net>
+License: GPL-3+
+
+License: GPL-3+
+ This program is free software; you can redistribute it
+ and/or modify it under the terms of the GNU General Public
+ License as published by the Free Software Foundation; either
+ version 3 of the License, or (at your option) any later
+ version.
+ .
+ This program is distributed in the hope that it will be
+ useful, but WITHOUT ANY WARRANTY; without even the implied
+ warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR
+ PURPOSE.  See the GNU General Public License for more
+ details.
+ .
+ You should have received a copy of the GNU General Public
+ License along with this package; if not, write to the Free
+ Software Foundation, Inc., 51 Franklin St, Fifth Floor,
+ Boston, MA  02110-1301 USA
+ .
+ On Debian systems, the full text of the GNU General Public
+ License version 2 can be found in the file
+ `/usr/share/common-licenses/GPL-3'.
+
+License: GPL-2+
+ This program is free software; you can redistribute it
+ and/or modify it under the terms of the GNU General Public
+ License as published by the Free Software Foundation; either
+ version 2 of the License, or (at your option) any later
+ version.
+ .
+ This program is distributed in the hope that it will be
+ useful, but WITHOUT ANY WARRANTY; without even the implied
+ warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR
+ PURPOSE.  See the GNU General Public License for more
+ details.
+ .
+ You should have received a copy of the GNU General Public
+ License along with this package; if not, write to the Free
+ Software Foundation, Inc., 51 Franklin St, Fifth Floor,
+ Boston, MA  02110-1301 USA
+ .
+ On Debian systems, the full text of the GNU General Public
+ License version 2 can be found in the file
+ `/usr/share/common-licenses/GPL-2'.
+
+License: Expat
+  Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files (the "Software"), to deal
+  in the Software without restriction, including without limitation the rights
+  to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+  copies of the Software, and to permit persons to whom the Software is
+  furnished to do so, subject to the following conditions:
+  .
+  The above copyright notice and this permission notice shall be included in
+  all copies or substantial portions of the Software.
+  .
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+  THE SOFTWARE.

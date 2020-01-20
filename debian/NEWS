@@ -1,0 +1,43 @@
+rawtherapee (4.2-1) unstable; urgency=medium
+
+  The location of cache and config folder change with this release again.
+  Upstream declared the locations stable from now on and calls them
+  "RawTherapee" from now on. This means you will find the cache and config
+  folders in ~/.cache/RawTherapee and ~/.config/RawTherapee.
+
+  * If ~/.cache/RawTherapee and ~/.config/RawTherapee exist on your system,
+    please delete them as they belong to old versions of RawTherapee and
+    upgrading form these is not supported upstream.
+
+  * To preserve preferences and cached thumbnails you have to move 
+    ~/.cache/RawTherapee-4.1 and ~/.config/RawTherapee-4.1 to
+    ~/.cache/RawTherapee and ~/.config/RawTherapee.
+
+ -- Philip Rinn <rinni@inventati.org>  Sun, 26 Oct 2014 14:00:34 +0200
+
+rawtherapee (4.1-1) unstable; urgency=medium
+
+  The location of cache and config folder change with this release. This means
+  your preferences and cached thumbnails will be lost. This is intended by
+  upstream. The reasons for this are as follows:
+
+  * Some users have not checked Preferences in a long time, and their program
+    is tuned for what worked best long ago, not for what works best now. Our
+    defaults are good ones, we keep them up to date to make RawTherapee look 
+    and function well out-of-the-box, so having 4.1 start with fresh defaults
+    is a good thing, and it will motivate users to look into Preferences again.
+
+  * Some users have never looked inside Preferences and are not aware of some
+    of the features that can be unlocked there. As above, fresh defaults will 
+    activate these things.
+
+  * Some old cache and config files can cause RawTherapee to crash. While we
+    have patched the specific cases made known to us, it is safe to assume
+    there are still cases unknown to us which will still cause instability.
+    Starting with clean cache and config folders mitigates this problem.
+
+  You find the old cache and config folders in ~/.cache/RawTherapee and
+  ~/.config/RawTherapee. It's safe to delete them.
+
+ -- Philip Rinn <rinni@inventati.org>  Sun, 6 Jul 2014 13:14:54 +0200
+

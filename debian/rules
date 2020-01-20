@@ -1,0 +1,30 @@
+#!/usr/bin/make -f
+
+## Enable compiler hardening flags.
+export DEB_BUILD_MAINT_OPTIONS = hardening=+all
+## Only link with needed libraries
+export DEB_LDFLAGS_MAINT_APPEND = -Wl,--as-needed
+
+## Build Rawtherapee with C++11
+export DEB_CXXFLAGS_MAINT_APPEND = -std=c++11
+
+## Strangely -fPIC is missing, this makes the build fail on some archs
+export DEB_CXXFLAGS_MAINT_APPEND = -fPIC
+export DEB_CFLAGS_MAINT_APPEND = -fPIC
+
+%:
+	dh $@
+
+override_dh_auto_configure:
+	dh_auto_configure -- -DCMAKE_BUILD_TYPE=Release -DCREDITSDIR=/usr/share/doc/rawtherapee -DLICENCEDIR=/usr/share/doc/rawtherapee -DPROC_FORCED_LABEL=generic -DCACHE_NAME_SUFFIX=""
+
+override_dh_install-arch:
+	dh_install
+	rm debian/rawtherapee/usr/share/doc/rawtherapee/LICENSE.txt
+	# Make build reproducible
+	sed -i -e 's@ [^ ]*-f\(file\|debug\)-prefix-map=[^ ]*@@g' debian/rawtherapee/usr/share/doc/rawtherapee/AboutThisBuild.txt
+
+override_dh_install-indep:
+	dh_install
+	rm debian/rawtherapee-data/usr/share/rawtherapee/languages/LICENSE
+	rm debian/rawtherapee-data/usr/share/rawtherapee/languages/README

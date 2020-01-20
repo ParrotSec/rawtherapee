@@ -1,0 +1,15 @@
+Version: ${GIT_DESCRIBE}
+Branch: ${GIT_BRANCH}
+Commit: ${GIT_COMMIT}
+Commit date: ${GIT_COMMIT_DATE}
+Compiler: ${COMPILER_INFO}
+Processor: ${PROC_LABEL}
+System: ${SYSTEM}
+Bit depth: ${PROC_BIT_DEPTH}
+Gtkmm: V${GTKMM_VERSION}
+Lensfun: V${LENSFUN_VERSION}
+Build type: ${BUILD_TYPE}
+Build flags: ${CXX_FLAGS}
+Link flags: ${LFLAGS}
+OpenMP support: ${OPTION_OMP}
+MMAP support: ${WITH_MYFILE_MMAP}

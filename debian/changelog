@@ -1,0 +1,287 @@
+rawtherapee (5.7-2nightly20200120) rolling-testing; urgency=medium
+
+  * Import new nightly version.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Mon, 20 Jan 2020 23:34:29 +0100
+
+rawtherapee (5.7-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Bump Standards-Version to 4.4.0 (no changes necessary).
+  * Bump debhelper compat to 12 (no changes necessary).
+
+ -- Philip Rinn <rinni@inventati.org>  Sat, 14 Sep 2019 16:00:37 +0200
+
+rawtherapee (5.6-1) unstable; urgency=medium
+
+  * New upstream release:
+    - Add build dependency librsvg2-dev
+    - Fix FTBFS with gcc-9 (closes: #925817).
+  * Bump Standards-Version to 4.3.0 (no changes necessary).
+
+ -- Philip Rinn <rinni@inventati.org>  Sun, 07 Jul 2019 11:03:30 +0200
+
+rawtherapee (5.5-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Make build reproducible (closes: #907613).
+  * Bump Standards-Version to 4.2.1 (no changes necessary).
+
+ -- Philip Rinn <rinni@inventati.org>  Thu, 20 Dec 2018 16:00:06 +0100
+
+rawtherapee (5.4-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Add upstream metadata.
+  * Bump Standards-Version to 4.1.3 (no changes necessary).
+  * Bump debhelper compat to 11 (no changes necessary).
+  * Update Vcs URLs in debian/control.
+
+ -- Philip Rinn <rinni@inventati.org>  Wed, 21 Mar 2018 19:22:47 +0100
+
+rawtherapee (5.3-1) unstable; urgency=medium
+
+  * New upstream release:
+    - Add build dependency liblensfun-dev
+  * Bump Standards-Version to 4.1.1 (no changes necessary).
+
+ -- Philip Rinn <rinni@inventati.org>  Sun, 01 Oct 2017 00:03:29 +0200
+
+rawtherapee (5.2-1) unstable; urgency=medium
+
+  * New upstream release:
+    - Remove build dependency libbz2-dev
+
+ -- Philip Rinn <rinni@inventati.org>  Mon, 24 Jul 2017 11:31:15 +0200
+
+rawtherapee (5.1-2) unstable; urgency=medium
+
+  * Install new binary rawtherapee-cli (closes: #868317):
+    - Link man page rawtherapee to rawtherapee-cli
+  * Bump Standards-Version to 4.0.0 (no changes necessary).
+
+ -- Philip Rinn <rinni@inventati.org>  Mon, 17 Jul 2017 13:57:49 +0200
+
+rawtherapee (5.1-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Add complie flag -fPIC as build fail on some archs without it.
+
+ -- Philip Rinn <rinni@inventati.org>  Wed, 14 Jun 2017 16:10:31 +0200
+
+rawtherapee (5.0-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- Philip Rinn <rinni@inventati.org>  Mon, 23 Jan 2017 16:37:12 +0100
+
+rawtherapee (4.2.1395-1) unstable; urgency=medium
+
+  * New upstream snapshot (closes: #841498).
+  * Remove patch patch/01-fix-overflow-in-dcraw.patch:
+    - It's applied upstream
+  * Bump debhelper compat from 9 to 10 (no changes necessary).
+  * Make build reproducible on i386.
+
+ -- Philip Rinn <rinni@inventati.org>  Wed, 16 Nov 2016 23:46:17 +0100
+
+rawtherapee (4.2.1241-2) unstable; urgency=medium
+
+  * Close fixed bugs (closes: #769028, #801540, #822537)
+  * Add patch patch/01-fix-overflow-in-dcraw.patch:
+    - Fix buffer overflow in dcraw (CVE-2015-8366)
+
+ -- Philip Rinn <rinni@inventati.org>  Fri, 30 Sep 2016 23:16:25 +0200
+
+rawtherapee (4.2.1241-1) unstable; urgency=medium
+
+  * New upstream snapshot:
+    - Switch to branch 'gtk3'
+  * Remove all patches as they are merged upstream
+  * Update build dependencies
+
+ -- Philip Rinn <rinni@inventati.org>  Fri, 30 Sep 2016 21:05:52 +0200
+
+rawtherapee (4.2-5) unstable; urgency=medium
+
+  * Use secure URIs for vcs-* in debian/control.
+  * Add patch/06_fix_ftbfs_on_i386-armhf.patch:
+    - Use std::abs() in rtefix/rtexif.h
+  * Bump Standards-Version to 3.9.8 (no changes necessary).
+
+ -- Philip Rinn <rinni@inventati.org>  Sun, 25 Sep 2016 22:49:38 +0200
+
+rawtherapee (4.2-4) unstable; urgency=medium
+
+  * Add patch/05_fix_build_due_to_unsigned_char.patch:
+    - Fix build with C++11 as char is unsigned on some architectures.
+      Thanks Gert Wollny for the fix.
+
+ -- Philip Rinn <rinni@inventati.org>  Wed, 04 Nov 2015 16:58:31 +0100
+
+rawtherapee (4.2-3) unstable; urgency=medium
+
+  * Add patch debian/patches/04_fix_build_with_c++11.patch:
+    - Fix build with C++11
+  * Build with C++11 as glibmm2.4 >= 2.46.1 requires that.
+  * Add patch debian/patches/03_fix_build_with_new_sigc++.patch:
+    - Fix build with sigc++ >= 2.5.2
+  * Remove menu file due to tech-ctte decision on #741573.
+
+ -- Philip Rinn <rinni@inventati.org>  Tue, 03 Nov 2015 18:00:21 +0100
+
+rawtherapee (4.2-2) unstable; urgency=high
+
+  * debian/control: Fix typo in Vcs-Git field
+  * Add patch debian/patches/02-fix_CVE-2015-3885.patch:
+    - Fix dcraw input sanitization errors (CVE-2015-3885)
+
+ -- Philip Rinn <rinni@inventati.org>  Thu, 14 May 2015 17:41:15 +0200
+
+rawtherapee (4.2-1) unstable; urgency=medium
+
+  * New upstream release:
+    - Location of cache and config folder changed again, see NEWS.Debian.
+  * Add patch debian/patches/01-fix_build_race-condition.patch:
+    - cherry-picked from upstream as build _sometimes_ fails without
+  * Bump Standards-Version to 3.9.6 (no changes necessary).
+
+ -- Philip Rinn <rinni@inventati.org>  Sun, 26 Oct 2014 14:00:34 +0200
+
+rawtherapee (4.1-1) unstable; urgency=medium
+
+  * New upstream release:
+    - Documentation is removed so we don't need to repack the source anymore.
+    - Location of cache and config folder changed. See NEWS.Debian for details.
+  * Drop patch debian/patches/01-AboutThisBuild.patch.
+
+ -- Philip Rinn <rinni@inventati.org>  Sun, 6 Jul 2014 13:14:54 +0200
+
+rawtherapee (4.0.12+dfsg-2) unstable; urgency=medium
+
+  * Install file camconst.json (closes: #737610).
+
+ -- Philip Rinn <rinni@inventati.org>  Wed, 05 Feb 2014 20:05:28 +0100
+
+rawtherapee (4.0.12+dfsg-1) unstable; urgency=low
+
+  * New upstream release:
+    - add build dependency g++ (>= 4:4.7) and libgtk2.0-0 (>=2.24.18)
+  * Refresh debian/patches/01-AboutThisBuild.patch to apply cleanly.
+  * Bump Standards-Version to 3.9.5 (no changes necessary).
+
+ -- Philip Rinn <rinni@inventati.org>  Tue, 14 Jan 2014 16:15:31 +0100
+
+rawtherapee (4.0.11+dfsg-1) unstable; urgency=low
+
+  * New upstream release (closes: #681952, #710534; LP: #1035052):
+    - Add build dependency libcanberra-gtk-dev
+    - Remove debian/rawtherapee.1 as it's shipped upstream
+  * Bump Standards-Version to 3.9.4 (no changes necessary).
+  * Update package description (closes: #682657).
+  * Refresh debian/patches/01-AboutThisBuild.patch to apply cleanly.
+  * Add debian/watch as recommended by Debian Policy Manual section 4.11.
+    - Repack the source and document it in debian/README.source
+
+ -- Philip Rinn <rinni@gmx.net>  Wed, 26 Jun 2013 17:57:39 +0200
+
+rawtherapee (4.0.9-4) unstable; urgency=low
+
+  * Fix RC bug that corrupts EXIF data in some cases (closes: #693736):
+     - add debian/patches/03-fix_exif_corruption.patch: Use the correct
+       size for multibyte EXIF tags which use TagDirectoryTable
+
+ -- Philip Rinn <rinni@gmx.net>  Mon, 19 Nov 2012 21:11:43 +0000
+
+rawtherapee (4.0.9-3) unstable; urgency=low
+
+  * Fix upgrade failure to testing (closes: #677575).
+  * Build-depend on libtiff-dev instead of libtiff4-dev.
+
+ -- Philip Rinn <rinni@gmx.net>  Fri, 15 June 2012 10:43:12 +0100
+
+rawtherapee (4.0.9-2) unstable; urgency=low
+
+  * Fix build failures (closes: #677293):
+    - use override_dh_install-{arch,indep} in debian/rules
+  * Add patch debian/patches/02-fix_color_artifacts.patch:
+    - fix color artifacts (from upstream)
+
+ -- Philip Rinn <rinni@gmx.net>  Wed, 13 June 2012 20:01:54 +0100
+
+rawtherapee (4.0.9-1) unstable; urgency=low
+
+  * New upstream release (closes: #662753).
+  * Bump Standards-Version to 3.9.3 (no changes necessary).
+  * Bump debhelper compat from 8 to 9 (no changes necessary).
+  * Enable hardened build flags.
+  * Build-depend on libpng-dev instead of libpng12-dev (closes: #662491).
+  * Refresh debian/patches/01-AboutThisBuild.patch to apply cleanly.
+  * Remove debian/patches/ftbfs-gcc-4.7.diff as it's not needed anymore.
+  * Split package as the arch-independent part got bigger.
+
+ -- Philip Rinn <rinni@gmx.net>  Sun, 03 June 2012 18:50:12 +0100
+
+rawtherapee (3.0.0~dfsg1-1.1) unstable; urgency=low
+
+   * Non maintainer upload
+   * Fix build failure with GCC 4.7. Closes: #667349.
+
+ -- Matthias Klose <doko@debian.org>  Wed, 30 May 2012 06:08:03 +0000
+
+rawtherapee (3.0.0~dfsg1-1) unstable; urgency=low
+
+  * New upstream release (closes LP: #795161).
+  * Remove debian/rawtherapee.desktop as it's shipped upstream
+  * Remove debian/patches/01-change-name.patch:
+    - applied upstream
+  * Remove debian/patches/03-change-config-dir.patch:
+    - merge with patch debian/patches/01-AboutThisBuild.patch
+  * Update debian/patches/01-AboutThisBuild.patch to reflect upstream changes.
+  * debian/copyright: update copyright info.
+  * Bump Standards-Version to 3.9.2 (no changes necessary).
+
+ -- Philip Rinn <rinni@gmx.net>  Sat,  16 Jul 2011 15:06:34 +0200
+
+rawtherapee (3.0~a2+hg1075.9a478044c65c~dfsg1-1) unstable; urgency=low
+
+  * New upstream snapshot:
+    - Switch to branch 'branch_3.0'
+    - Improve automatic white balance (closes: #588220)
+    - Don't crash with some Sony RAW files (closes: #610727)
+    - many other bugfixes (e.g. LP: #738429)
+  * Refresh patches to apply cleanly.
+  * Remove debian/patches/01-no-debug-build.patch:
+    - No need for a patch. We can do this in debian/rules
+  * Remove debian/patches/04-move-cache.patch:
+    - It's accepted upstream
+  * Add debian/patches/01-AboutThisBuild.patch:
+    - Hard-code version as we don't ship the whole repository
+  * debian/copyright: update copyright info.
+
+ -- Philip Rinn <rinni@gmx.net>  Sun,  03 Apr 2011 09:37:21 +0200
+
+rawtherapee (3.0~a1+hg193.38c23c24d316~dfsg1-1) experimental; urgency=low
+
+  * New upstream snapshot:
+    - Update dcraw to 9.03
+    - Add demosaic algorithm AMaZE
+    - Add CA auto-correction
+    - Add wavelet equalizer
+    - Start to use OpenMP
+    - fixes a lot of bugs
+  * Refresh patches to apply cleanly.
+  * Add debian/patches/04-move-cache.patch:
+    - Move the cache directory automatically to the new location
+  * debian/copyright: update copyright info.
+  * debian/control: remove build dependency mercurial.
+  * Bump debhelper compat from 7 to 8 (no changes necessary).
+  * Bump Standards-Version to 3.9.1 (no changes necessary).
+
+ -- Philip Rinn <rinni@gmx.net>  Sat,  21 Aug 2010 19:36:37 +0100
+
+rawtherapee (3.0~a1+hg101.3ab930d2d140~dfsg1-1) unstable; urgency=low
+
+  * Initial release (closes: #552000)
+
+ -- Philip Rinn <rinni@gmx.net>  Wed,  26 May 2010 23:40:04 +0100
